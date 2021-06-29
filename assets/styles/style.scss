@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom 'base' styles to be imported between Tailwind 'base' and 'components'
+@layer base {
+	@import 'base/fonts';
+	@import 'base/global';
+}
+
+// Custom 'component' styles to be imported between Tailwind 'components' and 'utilities'
+@layer components {
+	@import 'components/buttons';
+}
+
+// Custom layout styles
+@import 'layout/header';
+@import 'layout/footer';
+
+
+// Custom view-specific styles
+@import 'views/home';

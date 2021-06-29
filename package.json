@@ -1,0 +1,49 @@
+{
+  "name": "slab",
+  "version": "1.0.0",
+  "description": "A jumping-off point for creating",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "prod": "gulp build --env=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "paths": {
+    "base": "./",
+    "files": [
+      "./**/*.php",
+      "./**/*.html"
+    ],
+    "scripts": {
+      "input": [
+        "./node_modules/jquery/dist/jquery.js",
+        "./assets/scripts/src/**/*.js"
+      ],
+      "output": "./assets/scripts/dist"
+    },
+    "styles": {
+      "input": "./assets/styles/**/*.scss",
+      "output": "./assets/styles"
+    }
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-environments": "^1.0.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.0.1",
+    "jquery": "^3.6.0",
+    "sass": "^1.35.1",
+    "tailwindcss": "^2.2.4"
+  },
+  "dependencies": {}
+}
